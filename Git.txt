@@ -1,0 +1,16 @@
+I. Git Init
+
+1. Đầu tiên bạn tạo một Repo kho chứa trên remote https://github.com/
+2. Nếu trong local bạn đã có git thì tạo connect: git remote add origin link https://github.com/project (trước đó nên có git init để tạo kho git)
+3. Nếu bạn chưa có git ở local thì tại folder lớn cần tải dự án gọi: git clone link https://github.com/project
+
+II. Work it 
+1. khi xong các việc cụ thể và save thay đổi bạn dùng: git add . (dấu . thể hiện là all)
+2. Sau đó bạn dùng: git commit -m"nội dung thay đổi"
+3. Cuối cùng để đẩy toàn bộ code lên kho remove dùng: git push origin main (lưu ý nhanh đẩy lên là nhánh main = nhánh chính, trước đây là master)
+4. Khi cần kiem tra remove có gì mới không ta dung: git fetch origin (nó sẽ check xem có sự thay đổi nào không trên toàn bộ các nhánh)
+5. Đong ý vs thay doi va keo va local : git pull origin (keo tu nhanh main)
+
+
+
+

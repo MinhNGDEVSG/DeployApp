@@ -1,1 +1,6 @@
 
+1. What is Nginx : https://topdev.vn/blog/wp-content/uploads/2019/05/webserver-la-gi.jpg
+2. Các khái niệm về Ip, proxy, port
+3. Các folder, file trong Nginx.
+4. Chạy cài nginx cho server.
+5. Cách cấu hình cho webs.

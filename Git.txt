@@ -7,9 +7,12 @@ I. Git Init
 II. Work it 
 1. khi xong các việc cụ thể và save thay đổi bạn dùng: git add . (dấu . thể hiện là all)
 2. Sau đó bạn dùng: git commit -m"nội dung thay đổi"
-3. Cuối cùng để đẩy toàn bộ code lên kho remove dùng: git push origin main (lưu ý nhanh đẩy lên là nhánh main = nhánh chính, trước đây là master)
-4. Khi cần kiem tra remove có gì mới không ta dung: git fetch origin (nó sẽ check xem có sự thay đổi nào không trên toàn bộ các nhánh)
-5. Đong ý vs thay doi va keo va local : git pull origin (keo tu nhanh main)
+3. Cuối cùng để đẩy toàn bộ code lên kho remote dùng: git push origin main (lưu ý nhánh đẩy lên là nhánh main = nhánh chính, trước đây là master)
+4. Khi cần kiem tra remote có gì mới không ta dung: git fetch origin (nó sẽ check xem có sự thay đổi nào không trên toàn bộ các nhánh)
+5. Đồng ý vs thay đổi và muốn kéo về local : git pull origin main (kéo từ chính branch bạn đang working)
+6. Nếu như bạn muốn trộn code từ nhánh khác về thì lại khác ví dụ trộn views về main: - git checkout main (sau đó) - git merge views
+
+III. Các kỹ thuật cao hơn
 
 
 

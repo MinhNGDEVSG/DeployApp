@@ -4,3 +4,8 @@
 3. Các folder, file trong Nginx.
 4. Chạy cài nginx cho server.
 5. Cách cấu hình cho webs.
+
+
+
+
+... more link : https://vietnix.vn/nginx-config/

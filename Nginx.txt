@@ -18,7 +18,12 @@ I. kHÁI NIỆM
 => kiểm tra port 80: telnet ip_server 80 (log = Escape character is '^]'.) => opened, còn nếu (log = Connection timed out) => closed.
 => Checking port online open: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap
 => Install Nmap: apt install nmap, then : nmap [option] [ip may chu] => show all ported.
-=> Closed port: 
+=> Closed or open port: 
+{
+open : sudo ufw allow 80
+close: sudo ufw deny 80
+}
+
 
 II. Setup
 - Sau khi cài đặt môi trường Nodejs và NGINX xong.

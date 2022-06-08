@@ -1,11 +1,49 @@
+root@vultr:/#  (/# là root tư file hệ thống)
+root@vultr:~# (~# là root file use, cd root)
+
+
+I. kHÁI NIỆM
 
 1. What is Nginx : https://topdev.vn/blog/wp-content/uploads/2019/05/webserver-la-gi.jpg
 2. Các khái niệm về Ip, proxy, port
 3. Các folder, file trong Nginx.
 4. Chạy cài nginx cho server.
-5. Cách cấu hình cho webs.
+5. Open FireWall (đôi khi nhà cung cấp sẽ chặn bạn phải open Port(mở cổng) ví dụ: 80, 8080, 443 (ssl), 5000...
+- Server có ip định danh như ngôi nhà, và kho chứa data.
+- Port đóng vai trò là cánh cổng đóng mở kho chứa data.
+- Own nói vs các client data tôi ở ip domain (nhà đó) bạn thực hiện các request (get, post...) để lấy nó.
+=> Như vậy chỉ sau khi data và các thiết kế App sẵn sàng thì ông chủ mới open port cho bạn truy cập tới.
+=> Trường hợp có nguy hiểm ông chủ có thể đóng Port lại để bảo vệ App và tài nguyên server.
+
+II. Setup
+- Sau khi cài đặt môi trường Nodejs và NGINX xong.
+- Chạy cd /etc/nginx/ 
+- Chạy ls để xem các folder có trong Nginx.
+- Kiểm tra file conf bạn sẽ biết được NGINX nhận file nào là file nạp cấu hình: vi /etc/nginx/nginx.conf (open vs vim).
+- Bạn sẽ thấy nginx.conf nhận nạp các file cấu h trong modules-enabled: vs notify include /etc/nginx/modules-enabled/*.conf;
+- Đến file modules-enabled và tạo một folder mới với tên web tùy ý ví dụ là nodeWeb: vi /etc/nginx/sites-enabled/nodeWeb 
+- Gán text sau vao file cau hinh nay:
+
+server {
+    listen 80;
+    listen [::]:80;
+
+    index index.html server.js;
+
+    server_name theskyfund.org www.theskyfund.org;
+
+    location / {
+            proxy_pass http://localhost:5000;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+}
 
 
 
-
-... more link : https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04, https://www.youtube.com/watch?v=1sdaPoXWQrw
+III. More link : 
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04, 
+https://www.youtube.com/watch?v=1sdaPoXWQrw

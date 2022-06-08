@@ -4,3 +4,16 @@
 - Setup nodej và vài cú pháp là xong.
 - Để ý khu vực tường lửa mở ra các port 80 and 5000.
 
+2. Một số lệnh cơ bản của hệ điều hành: 
+- Login root allway protocal ssh, port 22.
+- add new user: addser nameUser
+- Kiểm tra lại các quyền hạn read, write thêm vào cho new user
+- xóa user: deluser nameUser
+- xóa folder data of this nameUser: rm -r /home/userName
+- switch sang user new :su - username, logout: exit
+- ls -l /etc/ => view file system
+
+
+3. More link 
+- https://www.youtube.com/watch?v=CLJSI2xO1Mo
+- https://www.youtube.com/watch?v=ob3SLQoMJOo

@@ -1,6 +1,7 @@
 root@vultr:/#  (/# là root tư file hệ thống)
 root@vultr:~# (~# là root file use, cd root)
-
+*** Nếu không có NGINX app bạn vẫn chạy bình thuong, NGINX chỉ đơn giản đứng trung gian (client <-> Nginx <-> server).
+*** NGINX nó sl tốt các request 10k và caching file tĩnh tốt and reverse port 80(http-client)-5000(app).
 
 I. kHÁI NIỆM
 
@@ -13,7 +14,11 @@ I. kHÁI NIỆM
 - Port đóng vai trò là cánh cổng đóng mở kho chứa data.
 - Own nói vs các client data tôi ở ip domain (nhà đó) bạn thực hiện các request (get, post...) để lấy nó.
 => Như vậy chỉ sau khi data và các thiết kế App sẵn sàng thì ông chủ mới open port cho bạn truy cập tới.
-=> Trường hợp có nguy hiểm ông chủ có thể đóng Port lại để bảo vệ App và tài nguyên server.
+=> Trường hợp có nguy hiểm ông chủ có thể đóng Port lại để bảo vệ App và tài nguyên server. 
+=> kiểm tra port 80: telnet ip_server 80 (log = Escape character is '^]'.) => opened, còn nếu (log = Connection timed out) => closed.
+=> Checking port online open: https://pentest-tools.com/network-vulnerability-scanning/tcp-port-scanner-online-nmap
+=> Install Nmap: apt install nmap, then : nmap [option] [ip may chu] => show all ported.
+=> Closed port: 
 
 II. Setup
 - Sau khi cài đặt môi trường Nodejs và NGINX xong.

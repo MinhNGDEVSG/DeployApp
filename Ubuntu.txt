@@ -1,2 +1,6 @@
 
 1. Triển khai Ubuntu cho Nodejs
+- Mua một Vps ubuntu. 
+- Setup nodej và vài cú pháp là xong.
+- Để ý khu vực tường lửa mở ra các port 80 and 5000.
+

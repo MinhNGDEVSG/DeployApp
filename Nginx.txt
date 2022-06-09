@@ -2,11 +2,12 @@ root@vultr:/#  (/# là root tư file hệ thống)
 root@vultr:~# (~# là root file use, cd root)
 *** Nếu không có NGINX app bạn vẫn chạy bình thuong, NGINX chỉ đơn giản đứng trung gian (client <-> Nginx <-> server).
 *** NGINX nó sl tốt các request 10k và caching file tĩnh tốt and reverse port 80(http-client)-5000(app).
+*** Chúng ta có khái niệm cò mồi (proxy server) đứng chung gian phân phối requets client đến ip server đích (chủ yếu dùng fake ip truy cập vượt tường lửa nhà cung cấp mạng thuong dùng trong doanh nghiệp là chính: https://nhanhoa.com/tin-tuc/proxy-server-la-gi.html).
 
 I. kHÁI NIỆM
 
 1. What is Nginx : https://topdev.vn/blog/wp-content/uploads/2019/05/webserver-la-gi.jpg
-2. Các khái niệm về Ip, proxy, port
+2. Các khái niệm về Ip, proxy, ngôi nhà và cánh cổng phân phối d
 3. Các folder, file trong Nginx.
 4. Chạy cài nginx cho server.
 5. Open FireWall (đôi khi nhà cung cấp sẽ chặn bạn phải open Port(mở cổng) ví dụ: 80, 8080, 443 (ssl), 5000...

@@ -8,7 +8,7 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 
 2. Một số lệnh cơ bản của hệ điều hành: 
 - Login root allway protocal ssh, port 22.
-- add new user: addser nameUser
+- add new user: adduser nameUser
 - Kiểm tra lại các quyền hạn read, write thêm vào cho new user
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName

@@ -34,6 +34,7 @@ Phân quyền: Chmod (change mode, thay đổi chế độ user, group, orther).
 
 
 3. More link 
+- https://www.youtube.com/watch?v=ob3SLQoMJOo (các phân quyền)
 - https://www.youtube.com/watch?v=CLJSI2xO1Mo
 - https://www.youtube.com/watch?v=ob3SLQoMJOo
 - https://www.hostinger.com/tutorials/linux-commands

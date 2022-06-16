@@ -11,7 +11,7 @@
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit
-- ls -l /etc/ => view file system
+- ls -l /etc/ => view all file system
 
 
 3. More link 

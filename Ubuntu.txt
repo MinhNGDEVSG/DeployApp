@@ -11,6 +11,7 @@
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit
+- ls -l / => view file gốc 
 - ls -l /etc/ => view all file system
 - ls -l /etc/sudoers => file phân quyền
 

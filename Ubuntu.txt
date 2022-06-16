@@ -13,9 +13,20 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit
-- ls -l / => view file gốc 
-- ls -l /etc/ => view all file system
-- ls -l /etc/sudoers => file phân quyền
+
+ls -l / => view file gốc 
+ls -l /etc/ => view all file system
+ls -l /etc/sudoers => file phân quyền
+
+AD: 
+-r là thể hiện một file
+d là thể hiện một directory (folder)
+chúng ta có 3 quy ch trong ubunntu và mỗi 3 ký tự là phân quyen hạn vd: rwx, ký tự đầu thể hiện nó là gì vd folder (d).
+(root thứ nhất là owner, root thứ hai là group (nhóm root), còn lại orther else (không ghi)
+drwxr-xr-x   1 root(owner) root(group root)  home (thư mục home)  
+=>  d(là một dir), rwx (root1 có quyền read, write, excute), r-x(root2 có đọc và excute dâu - là 0 có), còn lại là orther else (r-x cũng thế).
+
+
 
 
 3. More link 

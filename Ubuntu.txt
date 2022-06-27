@@ -55,8 +55,8 @@ Check Group:
 - Add user binhminh vao group root or any group: sudo usermod -aG root binhminh (add binhminh vao group root quyen nhu group root).
 - Gỡ user binhminh khỏi quyền một group root: sudo gpasswd -d binhminh root
 
-=> Một rule cao nhất trong hệ thống có thể trao cho một user duy nhất, và các rule gần giống có thể trao cho cùng nhiều user 
-=> Vì vậy user owner root luôn tạo ra một user mới có thể là admin và add các user khác group admin. admin(user) admin(group)
+=> Một rule cao nhất trong hệ thống có thể trao cho một user duy nhất, và các rule gần giống có thể trao cho cùng nhiều user.
+=> Vì vậy user owner root luôn tạo ra một user mới có thể là admin và add các user khác group admin. admin(user) admin(group).
 
 
 

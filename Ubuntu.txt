@@ -49,6 +49,17 @@ drwxrwxr-x 2 binhminh binhminh 4096 Jun 27 04:00 lessonXXX
 Note: neu co thong bao: is not in the sudoers file => user ban dang dung k co quyen excute (thuc thi) folder do or a file in this folder, 
 pls quay lai cap quyen tu root cho user.
 
+Check Group: 
+- Groups user (xem user thuoc group nao), cung co th go id => auto.
+- Check all groups: cat /etc/group => cat la xem toan bo file group.
+- Add user binhminh vao group root or any group: sudo usermod -aG root binhminh (add binhminh vao group root quyen nhu group root).
+
+=> Một rule cao nhất trong hệ thống có thể trao cho một user duy nhất, và các rule gần giống có thể trao cho cùng nhiều user 
+=> Vì vậy user owner root luôn tạo ra một user mới có thể là admin và add các user khác group admin. admin(user) admin(group)
+
+
+
+
 
 3. More link 
 - https://www.youtube.com/watch?v=ob3SLQoMJOo (các phân quyền)

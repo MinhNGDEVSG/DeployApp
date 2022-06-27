@@ -46,6 +46,8 @@ drwxrwxr-x 2 binhminh binhminh 4096 Jun 27 04:00 lessonXXX
 - folder lessonXXX thuộc user owner binhminh và nhóm chủ sh cũng là binhminh
 - chuyển sang cho user owner là root: sudo chown root lessonXXX
 - chuyển cả cho user owner root và group owner root luôn: sudo chown root:root lessonXXX
+Note: neu co thong bao: is not in the sudoers file => user ban dang dung k co quyen excute (thuc thi) folder do or a file in this folder, 
+pls quay lai cap quyen tu root cho user.
 
 
 3. More link 

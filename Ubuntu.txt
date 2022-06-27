@@ -15,7 +15,8 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 - switch sang user new :su - username, logout: exit
 - check user: cut -d : -f 1 /etc/passwd
 
-ls -l / => view file gốc, các file tạo ra làm viec simple.
+cd ~ : thu muc mac dinh các file tạo ra làm viec simple.
+ls -l / => view file gốc
 ls -l /etc/ => view all file system
 ls -l /etc/sudoers => file phân quyền
 

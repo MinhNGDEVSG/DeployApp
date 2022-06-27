@@ -30,7 +30,7 @@ drwxr-xr-x   1 root(owner) root(group root)  home (thư mục home)
 =>  d(là một dir), rwx (root1 có quyền read, write, excute), r-x(root2 có đọc và excute dâu - là 0 có), còn lại là orther else (r-x cũng thế).
 
 Phân quyền: Chmod (change mode, thay đổi chế độ user, group, orther).
-- cú pháp: chmod u=rwx g=rx o=r myfile => set cho nhóm user(owner) rwx, group rx, orther=r (only read).
+- cú pháp: sudo chmod u=rwx g=rx o=r myfile => set cho nhóm user(owner) rwx, group rx, orther=r (only read).
 - dâu + (giữ nguyên quyen cu them quyen moi, - bo bot di quyen nao do, = gan quyen nao do ban dau.
 - bạn cũng có thể set full là : a
 

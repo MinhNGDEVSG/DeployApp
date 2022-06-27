@@ -41,6 +41,12 @@ drwxrwxr-x 2 binhminh binhminh 4096 Jun 16 04:42 lesson-10
 => binhminh(2) thuộc nhóm group full quyền
 => orther nhóm còn lại chỉ có read and excute.
 
+Chuyển chủ: sudo chown 
+drwxrwxr-x 2 binhminh binhminh 4096 Jun 27 04:00 lessonXXX
+- folder lessonXXX thuộc user owner binhminh và nhóm chủ sh cũng là binhminh
+- chuyển sang cho user owner là root: sudo chown root lessonXXX
+- chuyển cả cho user owner root và group owner root luôn: sudo chown root:root lessonXXX
+
 
 3. More link 
 - https://www.youtube.com/watch?v=ob3SLQoMJOo (các phân quyền)

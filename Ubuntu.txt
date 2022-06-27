@@ -34,6 +34,10 @@ Phân quyền: Chmod (change mode, thay đổi chế độ user, group, orther).
 - dâu + (giữ nguyên quyen cu them quyen moi, - bo bot di quyen nao do, = gan quyen nao do ban dau.
 - bạn cũng có thể set full là : a
 
+drwxrwxr-x 2 binhminh binhminh 4096 Jun 16 04:42 lesson-10
+=> binhminh(1) thuộc nhóm owner full quyền
+=> binhminh(2) thuộc nhóm group full quyền
+=> orther nhóm còn lại chỉ có read and excute.
 
 
 3. More link 

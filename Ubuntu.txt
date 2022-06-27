@@ -14,6 +14,7 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit
 - check user: cut -d : -f 1 /etc/passwd
+- change password user, su toi root then: sudo passwd yourUser
 
 cd ~ : thu muc mac dinh các file tạo ra làm viec simple, app, web...
 ls -l: thu muc mac dinh các file tạo ra làm viec simple, app, web...

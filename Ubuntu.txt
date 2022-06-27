@@ -13,7 +13,7 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit
-- check user: who
+- check user: cut -d : -f 1 /etc/passwd
 
 ls -l / => view file gốc, các file tạo ra làm viec simple.
 ls -l /etc/ => view all file system

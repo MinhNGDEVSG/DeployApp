@@ -9,7 +9,16 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 2. Một số lệnh cơ bản của hệ điều hành: 
 - Login root allway protocal ssh, port 22.
 - add new user: adduser nameUser
-- Kiểm tra lại các quyền hạn read, write thêm vào cho new user
+- user moi dc tao se trong thu muc: ls -l /etc/sudoers
+- quay ve root account truoc.
+- nhung quyen root chi dc read and read sudoers=>: cap them quyen cho root ghi vao sudoers: chmod u+w /etc/sudoers (cho them quyen ghi cho root o file nay).
+- tu root mo file sudoers roi them zone sau:
+# User privilege specification
+root ALL=(ALL:ALL) ALL
+binhminh ALL=(ALL:ALL) ALL
+=> binhminh full quyen nhu root (có doc ghi thuc thi file neu dc cap)
+- bỏ đi quyên w của root để như ban đầu: chmod u-w /etc/sudoers
+
 - xóa user: deluser nameUser
 - xóa folder data of this nameUser: rm -r /home/userName
 - switch sang user new :su - username, logout: exit

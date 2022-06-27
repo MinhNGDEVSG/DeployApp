@@ -16,6 +16,7 @@ https://www.hostinger.vn/huong-dan/cac-lenh-co-ban-trong-linux
 - check user: cut -d : -f 1 /etc/passwd
 
 cd ~ : thu muc mac dinh các file tạo ra làm viec simple, app, web...
+ls -l: thu muc mac dinh các file tạo ra làm viec simple, app, web...
 ls -l / => view file gốc
 ls -l /etc/ => view all file system
 ls -l /etc/sudoers => file phân quyền

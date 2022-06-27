@@ -33,6 +33,7 @@ drwxr-xr-x   1 root(owner) root(group root)  home (thư mục home)
 Phân quyền: Chmod (change mode, thay đổi chế độ user, group, orther).
 - cú pháp: sudo chmod u=rwx,g=rx,o=r myfile => set cho nhóm user(owner) rwx, group rx, orther=r (only read).
 - dâu + (giữ nguyên quyen cu them quyen moi, - bo bot di quyen nao do, = gan quyen nao do ban dau.
+- ví dụ set cho user nhóm owner thêm quyền excute: sudo chmod u+x namefile (thêm user nhóm owner quyen excute). 
 - bạn cũng có thể set full là : a
 
 drwxrwxr-x 2 binhminh binhminh 4096 Jun 16 04:42 lesson-10

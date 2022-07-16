@@ -31,17 +31,22 @@ II. Setup
 - Chạy cd /etc/nginx/ 
 - Chạy ls để xem các folder có trong Nginx.
 - Kiểm tra file conf bạn sẽ biết được NGINX nhận file nào là file nạp cấu hình: vi /etc/nginx/nginx.conf (open vs vim).
-- Bạn sẽ thấy nginx.conf nhận nạp các file cấu h trong modules-enabled: vs notify include /etc/nginx/modules-enabled/*.conf;
-- Đến file modules-enabled và tạo một folder mới với tên web tùy ý ví dụ là nodeWeb: vi /etc/nginx/sites-enabled/nodeWeb 
-- Gán text sau vao file cau hinh nay:
+- 
+- Chay tao file "nodeWeb": vi /etc/nginx/sites-available/nodeWeb , co the tao hang chuc cau hinh mien la server ok. (available = co san).
+- Map available vao file enabled:  ln -s /etc/nginx/sites-available/nodeWeb /etc/nginx/sites-enabled/  ,(enabled = kich hoat).
+- Nhung Nginx se chi dinh cho /etc/nginx/nginx.conf nap cau hinh file, check: vi /etc/nginx/nginx.conf (thay enabled ben duoi).
 
+
+
+
+- Day la file write trong available , nho open port 5000, 80 truoc:
 server {
     listen 80;
     listen [::]:80;
 
     index index.html server.js;
 
-    server_name theskyfund.org www.theskyfund.org;
+    server_name domain.xxx www.domain.xxx;
 
     location / {
             proxy_pass http://localhost:5000;

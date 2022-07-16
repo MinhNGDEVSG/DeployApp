@@ -1,0 +1,2 @@
+- Trong quá trình triển khai bạn đôi khi quên Install các packes node: npm install 
+- Đừng quên kiểm tra lại xem code file server.js chạy đc chưa, đến file chứa code gõ: node server.js

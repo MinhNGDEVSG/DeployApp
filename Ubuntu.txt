@@ -80,3 +80,11 @@ binhminh root
 - https://www.youtube.com/watch?v=ob3SLQoMJOo
 - https://www.hostinger.com/tutorials/linux-commands
 - https://hostingviet.vn/cac-lenh-co-ban-trong-ubuntu
+
+
+4. trường hợp tiến trình có vấn đề: 
+- check process:  ps aux
+- kill id (default -15, wait save data).
+- kill -9 id (now, no wait save data).
+
+

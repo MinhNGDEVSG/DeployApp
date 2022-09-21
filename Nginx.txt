@@ -41,6 +41,7 @@ II. Setup
 
 - Day la file write trong available , nho open port 5000, 80 truoc:
 
+server {
     listen 80;
     listen [::]:80;
 

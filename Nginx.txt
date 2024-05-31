@@ -45,9 +45,9 @@ server {
     listen 80;
     listen [::]:80;
 
+    root /var/www/Runwallet;
     index index.html server.js;
-    root /var/www/html;
-    server_name binhminhng.com www.binhminhng.com;
+    server_name sharkscan.org www.sharkscan.org;
 
     location / {
             proxy_pass http://localhost:5000/;
@@ -58,7 +58,6 @@ server {
             proxy_cache_bypass $http_upgrade;
         }
 }
-
 
 
 III. More link : 
